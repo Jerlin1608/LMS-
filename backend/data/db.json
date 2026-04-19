@@ -1,0 +1,119 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "Admin@123",
+      "role": "admin",
+      "name": "Admin User",
+      "email": "admin@medlicense.gov"
+    },
+    {
+      "id": 2,
+      "username": "dr.arjun",
+      "password": "Doctor@123",
+      "role": "applicant",
+      "name": "Dr. Arjun Mehta",
+      "degree": "MBBS, MD",
+      "specialization": "Cardiology",
+      "dob": "1985-03-14",
+      "hospital": "Apollo Hospitals, Chennai",
+      "email": "arjun.mehta@apollo.in",
+      "avatar": "DR"
+    },
+    {
+      "id": 3,
+      "username": "dr.priya",
+      "password": "Doctor@123",
+      "role": "applicant",
+      "name": "Dr. Priya Sharma",
+      "degree": "MBBS",
+      "specialization": "General Practice",
+      "dob": "1990-07-22",
+      "hospital": "AIIMS Delhi",
+      "email": "priya.sharma@aiims.in",
+      "avatar": "DR"
+    },
+    {
+      "id": 4,
+      "username": "dr.ravi",
+      "password": "Doctor@123",
+      "role": "applicant",
+      "name": "Dr. Ravi Kumar",
+      "degree": "MD, DM",
+      "specialization": "Neurology",
+      "dob": "1982-11-09",
+      "hospital": "NIMHANS Bangalore",
+      "email": "ravi.kumar@nimhans.in",
+      "avatar": "DR"
+    }
+  ],
+  "applications": [
+    {
+      "id": 1,
+      "applicant_id": 2,
+      "license_type": "Full Medical License",
+      "specialization": "Cardiology",
+      "hospital": "Apollo Hospitals",
+      "status": "approved",
+      "applied_date": "2024-01-01",
+      "review_note": "All credentials verified. MBBS from AIIMS, MD confirmed. Approved with commendation.",
+      "license_id": "MLA-2024-00123",
+      "documents": []
+    },
+    {
+      "id": 2,
+      "applicant_id": 3,
+      "license_type": "Provisional License",
+      "specialization": "General Practice",
+      "hospital": "AIIMS Delhi",
+      "status": "pending",
+      "applied_date": "2024-03-03",
+      "review_note": "",
+      "license_id": null,
+      "documents": []
+    },
+    {
+      "id": 3,
+      "applicant_id": 4,
+      "license_type": "Specialist License",
+      "specialization": "Neurology",
+      "hospital": "NIMHANS Bangalore",
+      "status": "pending",
+      "applied_date": "2024-03-05",
+      "review_note": "",
+      "license_id": null,
+      "documents": []
+    },
+    {
+      "id": 4,
+      "applicant_id": 2,
+      "license_type": "Specialist License",
+      "specialization": "Interventional Cardiology",
+      "hospital": "Apollo Hospitals",
+      "status": "pending",
+      "applied_date": "2024-03-08",
+      "review_note": "",
+      "license_id": null,
+      "documents": []
+    }
+  ],
+  "licenses": [
+    {
+      "id": 1,
+      "license_id": "MLA-2024-00123",
+      "applicant_id": 2,
+      "license_type": "Full Medical License",
+      "specialization": "Cardiology",
+      "status": "active",
+      "issued_date": "2024-01-01",
+      "expiry_date": "2026-12-31",
+      "issued_by": "Medical Council of India",
+      "review_note": "All credentials verified. Approved with commendation."
+    }
+  ],
+  "notifications": [],
+  "nextAppId": 5,
+  "nextLicId": 2,
+  "nextUserId": 5
+}

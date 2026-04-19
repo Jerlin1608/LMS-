@@ -1,0 +1,18 @@
+{
+  "name": "medlicense-pro-fullstack",
+  "version": "2.0.0",
+  "description": "MedLicense Pro — Full Stack Medical License Authority System",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "express-session": "^1.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
