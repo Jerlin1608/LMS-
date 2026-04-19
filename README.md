@@ -132,7 +132,7 @@ MedLicensePro/
 ---
 
 ## Live Demo
-Deployed on Render — [Click here to view](https://medlicense-pro.onrender.com)
+Deployed on Render — [ https://lms-qent.onrender.com]
 
 ---
 
