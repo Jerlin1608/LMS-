@@ -1,45 +1,92 @@
-MedLicense Pro
-Medical License Authority System — Full Stack v2.0
+# MedLicense Pro
+### Medical License Authority System — Full Stack v2.0
 
-About
+---
+
+## About
 A complete dynamic web application for managing, verifying, and issuing medical practitioner licenses. Built with Node.js, Express, and a JSON database.
 
-What's New in Full Stack Version
+---
 
-All data saved to backend/data/db.json — persists across sessions
-Real login with session-based authentication
-All actions hit real REST API endpoints
-Notifications stored in database
-Passwords securely stored
+## What's New in Full Stack Version
 
+- All data saved to `backend/data/db.json` — persists across sessions
+- Real login with session-based authentication
+- All actions hit real REST API endpoints
+- Notifications stored in database
+- Passwords securely stored
 
-How to Run (Step by Step)
-Requirements
+---
 
-Node.js version 14 or higher
-VS Code
+## How to Run (Step by Step)
 
-Step 1 — Open the folder in VS Code
-Open VS Code → File → Open Folder → select the MedLicensePro_fullstack folder.
-Step 2 — Open the Terminal in VS Code
-Press Ctrl + `
-Step 3 — Install dependencies (first time only)
+### Requirements
+- [Node.js](https://nodejs.org/) version 14 or higher
+- VS Code
+
+### Step 1 — Open the folder in VS Code
+Open VS Code → **File** → **Open Folder** → select the `MedLicensePro_fullstack` folder.
+
+### Step 2 — Open the Terminal in VS Code
+Press `` Ctrl + ` ``
+
+### Step 3 — Install dependencies (first time only)
+```
 npm install
-Step 4 — Start the server
+```
+
+### Step 4 — Start the server
+```
 npm start
-Step 5 — Open in browser
+```
+
+### Step 5 — Open in browser
+```
 http://localhost:3000
+```
 
-Demo Login Credentials
-RoleUsernamePasswordAdministratoradminAdmin@123Doctordr.arjunDoctor@123Doctordr.priyaDoctor@123Doctordr.raviDoctor@123
+---
 
-Public Verification — no login needed, select "Verification" role.
+## Demo Login Credentials
 
+| Role | Username | Password |
+|------|----------|----------|
+| Administrator | `admin` | `Admin@123` |
+| Doctor | `dr.arjun` | `Doctor@123` |
+| Doctor | `dr.priya` | `Doctor@123` |
+| Doctor | `dr.ravi` | `Doctor@123` |
 
-API Endpoints
-MethodEndpointDescriptionPOST/api/auth/loginLoginPOST/api/auth/logoutLogoutGET/api/auth/meGet current userPOST/api/auth/signupRegister new doctorPOST/api/auth/reset-passwordReset passwordGET/api/applicationsGet all applicationsPOST/api/applicationsSubmit new applicationPUT/api/applications/:id/approveApprove applicationPUT/api/applications/:id/rejectReject applicationGET/api/licensesGet licensesGET/api/licenses/verify/:idPublic license verifyGET/api/licenses/verify-by-name/:nameVerify by doctor namePUT/api/licenses/:id/suspendSuspend licensePUT/api/licenses/:id/revokeRevoke licenseGET/api/notificationsGet my notificationsPUT/api/notifications/mark-readMark all readDELETE/api/notificationsClear all
+> Public Verification — no login needed, select "Verification" role.
 
-Project Structure
+---
+
+## API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| POST | `/api/auth/login` | Login |
+| POST | `/api/auth/logout` | Logout |
+| GET | `/api/auth/me` | Get current user |
+| POST | `/api/auth/signup` | Register new doctor |
+| POST | `/api/auth/reset-password` | Reset password |
+| GET | `/api/applications` | Get all applications |
+| POST | `/api/applications` | Submit new application |
+| PUT | `/api/applications/:id/approve` | Approve application |
+| PUT | `/api/applications/:id/reject` | Reject application |
+| GET | `/api/licenses` | Get licenses |
+| GET | `/api/licenses/verify/:id` | Public license verify |
+| GET | `/api/licenses/verify-by-name/:name` | Verify by doctor name |
+| PUT | `/api/licenses/:id/suspend` | Suspend license |
+| PUT | `/api/licenses/:id/revoke` | Revoke license |
+| GET | `/api/notifications` | Get my notifications |
+| PUT | `/api/notifications/mark-read` | Mark all read |
+| DELETE | `/api/notifications` | Clear all |
+
+---
+
+## Project Structure
+
+```
 MedLicensePro/
 ├── backend/
 │   ├── server.js
@@ -68,20 +115,36 @@ MedLicensePro/
 │       └── modals.html
 ├── package.json
 └── README.md
+```
 
-Key Features
+---
 
-Role Based Access — Admin, Doctor, and Public portals
-License Lifecycle — Apply, Approve, Reject, Suspend, Revoke
-QR Code Verification — Public license verification
-PDF Certificate — Download digitally signed license
-Notifications — Real-time alerts for doctors
-Document Upload — Attach files to applications
-Statistics Dashboard — Charts and analytics for admin
+## Key Features
 
+- **Role Based Access** — Admin, Doctor, and Public portals
+- **License Lifecycle** — Apply, Approve, Reject, Suspend, Revoke
+- **QR Code Verification** — Public license verification
+- **PDF Certificate** — Download digitally signed license
+- **Notifications** — Real-time alerts for doctors
+- **Document Upload** — Attach files to applications
+- **Statistics Dashboard** — Charts and analytics for admin
 
-Live Demo
-Deployed on Render — Click here to view
+---
 
-Tech Stack
-LayerTechnologyFrontendHTML, CSS, JavaScriptBackendNode.js, Express.jsDatabaseJSON File (db.json)AuthExpress SessionChartsChart.jsPDFjsPDFQR CodeQRCode.jsDeploymentRender.com
+## Live Demo
+Deployed on Render — [Click here to view](https://medlicense-pro.onrender.com)
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Frontend | HTML, CSS, JavaScript |
+| Backend | Node.js, Express.js |
+| Database | JSON File (db.json) |
+| Auth | Express Session |
+| Charts | Chart.js |
+| PDF | jsPDF |
+| QR Code | QRCode.js |
+| Deployment | Render.com |
